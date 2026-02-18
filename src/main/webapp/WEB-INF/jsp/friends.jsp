@@ -23,7 +23,12 @@
             <i class="bi bi-check2-circle fs-3 me-2"></i>
             <span>TaskMaster</span>
         </a>
-        <div class="ms-auto">
+        <div class="ms-auto d-flex align-items-center">
+            <div class="me-3 d-none d-md-block text-end">
+                <div class="small text-muted">Signed in as</div>
+                <div class="fw-semibold"><a href="/profile" class="text-decoration-none">${sessionScope.loggedInUser.username}</a></div>
+            </div>
+            <a href="/logout" class="btn btn-outline-danger btn-sm px-3 fw-bold rounded-pill me-3">Logout</a>
             <a href="/tasks" class="btn btn-outline-primary btn-sm px-3 fw-bold rounded-pill">Back to Dashboard</a>
         </div>
     </div>

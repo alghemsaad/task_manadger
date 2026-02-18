@@ -78,6 +78,12 @@
                             <label class="form-label small fw-bold">Password</label>
                             <input type="password" name="password" class="form-control" placeholder="••••••••" required>
                         </div>
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" name="rememberMe" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label small" for="rememberMe">Remember me</label>
+                            </div>
+                        </div>
                         <button type="submit" class="btn btn-primary w-100 shadow-sm">Login</button>
                     </form>
                     <hr>

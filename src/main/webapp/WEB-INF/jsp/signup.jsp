@@ -64,6 +64,12 @@
                         <div class="alert alert-danger py-2">${error}</div>
                     </c:if>
 
+                    <c:if test="${param.deleted != null}">
+                        <div class="alert alert-info">
+                            Your account has been successfully deleted.
+                        </div>
+                    </c:if>
+
                     <form action="/signup" method="post">
                         <div class="mb-3">
                             <label class="form-label small fw-bold">Username</label>
